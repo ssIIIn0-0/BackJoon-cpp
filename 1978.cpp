@@ -4,7 +4,7 @@ using namespace std;
 
 void isPrime(int n)
 {
-   // n개 동적할당
+   // 1000까지의 숫자에 대한 메모리 크기 할당
    vector<bool> savePrime(1001);
 
    int countPrime = 0;  // 소수 개수
