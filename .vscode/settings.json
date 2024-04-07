@@ -65,6 +65,7 @@
     "unordered_map": "cpp",
     "vector": "cpp",
     "initializer_list": "cpp",
-    "list": "cpp"
+    "list": "cpp",
+    "iosfwd": "cpp"
   }
 }
