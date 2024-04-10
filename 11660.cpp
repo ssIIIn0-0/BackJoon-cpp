@@ -9,22 +9,22 @@ int main()
     
     int N = 0;  // N*N 크기
     int M = 0;  // 합을 구해야하는 횟수
-    // 행 기준 각 인덱스까지 숫자의 합이 채워진 표
+    // 열 기준 각 인덱스까지 숫자의 합이 채워진 표
     // MaxBoard[X][Y]
     vector<vector<int>> MaxBoard;
     
     cin >> N >> M;
     MaxBoard.resize(N+1, vector<int>(N+1, 0));
 
-    // X값 (열)
+    // X값 (행)
     for (int i = 1; i < N+1; i++)
     {
-        // Y값 (행)
+        // Y값 (열)
         for (int j = 1; j < N+1; j++)
         {
             cin >> MaxBoard[i][j];
-            // 같은 행, 이전열값을 추가로 더함
-            // 같은 행의 누적값
+            // 같은 열, 이전 행값을 추가로 더함
+            // 같은 열의 누적값
             MaxBoard[i][j] += MaxBoard[i-1][j];
         }
     }
