@@ -9,7 +9,7 @@ vector<int> sortNum;    // 받은 숫자를 정렬
 // number[i] = j : number자체가 하나의 수열이 된다.(재활용할거임)
 // 하나의 수열에서 i번째 숫자가 j가 된다.
 vector<int> number; // 숫자를 넣어둘 벡터
-vector<bool> isVisited;
+vector<bool> isVisited; // 해당 숫자를 포함했는지(방문했는지) 파악하는 벡터
 
 void DFS(int start, int count)
 {
